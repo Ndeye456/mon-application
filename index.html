@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>mon application2</title>
+</head>
+
+<body>
+    <h1>Gestion de Budget</h1>
+    <div class="container">
+        <h4>Mon Solde</h4>
+        <h2 id="balance">000CFA</h2>
+        <div class="inc-exp-container">
+            <div>
+                <h4>Revenue</h4>
+                <p id="money-plus" class="money-plus">+000CFA </p>
+            </div>
+            <div>
+                <h4>Dépense</h4>
+                <p id="money-minus" class="mony-minus">-000CFA</p>
+            </div>
+        </div>
+        <h3>Historique</h3>
+        <ul id="list" class="list">
+            <li class="minus">
+                Argent<span>-400CFA</span>
+            </li>
+        </ul>
+        <h3> Ajouter une nouvelle Transition</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="Text">Text</label>
+                <input type="text" id="text" placeholder="Entrez text...">
+            </div>
+            <div class="form-control">
+                <label for="amount">Montant <br> (negative - dépense ,positive + revenue )</label>
+                <input type="number" id="amount" placeholder="Entrez montant...">
+            </div>
+            <button class="btn">Toutes les Transactions</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
